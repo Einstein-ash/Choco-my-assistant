@@ -39,8 +39,9 @@ class VoiceSession {
         // this.audioThreshold = 0.01; // ---> kaam kr rha 
         // this.audioThreshold = 0.09; // ----> thoda aur better 
         // this.audioThreshold = 0.2; // ----> even more better than pehle wala
-        // this.audioThreshold = 0.5; // ----> even more more more more better than pehle wala
-        this.audioThreshold = 0.4; // ----> even more more more more better than pehle wala
+        // this.audioThreshold = 0.3; // ----> even more better than pehle wala
+        this.audioThreshold = 0.5; // ----> even more more more more better than pehle wala
+        // this.audioThreshold = 0.4; // ----> even more more more more better than pehle wala
     }
 
     async connect() {
@@ -266,7 +267,7 @@ wss.on('connection', (ws) => {
     }));
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 server.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
